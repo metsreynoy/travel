@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* body{
+            text-align: center;
+            margin: 0; flex-direction: column;
+            background-color: rgba(127, 255, 178, 0.249);
+         }
+         p{
+            font-size: x-large;
+            font-family: sans-serif;
+            color: rgba(128, 128, 128, 0.708);
+         }
+         
+         .menu ul{
+             display: flex;
+            justify-content: center;
+         }
+         .menu  li{
+            list-style: none;
+               padding: 25px;
+               font-size: x-large;
+               font-family: serif;
+         }
+         .menu li a{
+            text-decoration: none;
+             color: rgba(128, 128, 128, 0.877);
+         }
+        .menu li:hover{
+            background-color:bisque;
+            transition: all ;
+          
+        }
+        .menu li a:hover{
+            color: red;
+        }
+         img:hover{
+             cursor: pointer;
+               box-shadow: 5px 5px 5px red;
+               transition-duration: 5ms;
+               transition-timing-function: linear;
+        }
+        .block {
+            display: inline-block;
+        }
+        .block img{
+             width: 300px;
+             height: 300px;
+        }*/
+    </style>
+</head>
+<body>
+    <!---make picture -------->
+          <div class="top-menu-btn">
+                 <div class="picture">
+                        <img src="" class="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?size=338&ext=jpg&ga=GA1.1.632798143.1705622400&semt=ais" alt="">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                 </div>
+
+                 <div class="menu">
+                    <ul>
+                     <li><a href="">Home</a></li>
+
+                     <li><a href="place.html">Place</a></li>
+                <div class="btn-food">
+                      <li><a href="Food.html">Food</a></li>
+                    <div class="food1">
+                   <!------<a href="">Phnom penh</a>
+                        <a href="">Siem Reap</a>
+                        <a href="">Kompong som</a>
+                        <a href="">Kompot</a>
+                        <a href="">Kompong cham</a>
+                        <a href="">Koh Kong</a>---->
+                    </div>
+                </div>
+                     <li><a href="">Other</a></li>
+                </ul>
+            </div>
+             
+                <div class="three-btn">
+                   <div class="div"></div>  
+                  <div class="div"></div>  
+                   <div class="div"></div> 
+                                
+                <div class="div-1">
+                        <li><a href="">home</a></li>
+                        <li><a href="place.html">Place</a></li>
+                        <li><a href="Food.html">Food</a></li>
+                        <li><a href="">Other</a></li>
+                </div>
+                </div>
+               
+                    .
+          </div>
+
+        <div class="menu-img">
+            <p>រីករាយជាមួយនឹងយើង(happy with our)</p>
+        <div class="menu1-img">
+            <img src="https://th.bing.com/th/id/R.eaf4647c2488b304a02570c41343c481?rik=iFSolxQzBS4HGw&pid=ImgRaw&r=0" alt="">
+            
+           <img src="https://touringhighlights.com/wp-content/uploads/2020/09/Wat-Preah-Prom-Rath-Siem-Reap-Cambodia.jpg" alt="">
+        </div>
+            
+          <div class="block-img">
+               <div class="block">
+                 <p>Kompong cham</p>
+                      <img src="https://media.gettyimages.com/id/623416056/photo/rice-fields-in-kampong-cham-province.jpg?s=612x612&w=0&k=20&c=yq3C2OYG2Mxla_-U3UbIr-YmmQcLI6SzVE0KkSoUKHg=" alt="">
+                </div>
+                <div class="block">
+                    <p>Siem reap</p>
+                   <a href="siem reap.html"> <img src="https://media.gettyimages.com/id/502325314/photo/the-temple-of-angkor-wat-in-cambodia.jpg?s=612x612&w=0&k=20&c=PeRajI3kaTOv_COWtHWhm7jP_YYtTmvJ3WsDaLM5GQY=" alt=""></a>
+                    
+                </div>
+                <div class="block">
+                    <p>Phnome penh</p>
+                <a href=""><img src="https://media.gettyimages.com/id/1081793208/photo/wat-ounalom-at-sunset-in-phnom-penh-cambodia.jpg?s=612x612&w=0&k=20&c=ixWcgHeYJNHND6aYH6SKT9U3i9VvKSAWcZWPGHwuRuU=" alt=""></a>  
+                 
+              </div>
+            <div class="block">
+                <p>kompot</p>
+             <a href=""> <img src="https://media.gettyimages.com/id/910894296/photo/tada-waterfalls-kampot-cambodia.jpg?s=612x612&w=0&k=20&c=3ljzvnE9GpWQRohRudoFJaFQv-huyHT2m9kOT_x1OPw=" alt=""></a>
+          </div>
+         
+
+          <div class="block">
+            <p>Kompong Som</p>
+            <a href=""><img src="https://images.thrillophilia.com/image/upload/s--feA_v6ON--/c_fill,g_center,h_450,q_auto,w_752/f_auto,fl_strip_profile/v1/images/photos/000/104/583/original/1613993789_1.jpg.jpg" alt=""></a>
+           </div>
+           <div class="block">
+               <p>Kompong Tom</p>
+            <a href=""> <img src="https://www.myanmarlandtour.com/files/thumb/513/342/uploads/Cambodia/kampong-thom.jpg" alt=""></a>
+               
+           </div>
+           <div class="block">
+               <p>Koh Kong</p>
+         <a href="">  <img src="https://th.bing.com/th/id/R.92bac8e61e101a982e9b4494f4535076?rik=0NK1x24g0QM5Xw&pid=ImgRaw&r=0" alt=""></a>
+            
+         </div>
+       <div class="block">
+           <p>Rattanak Kiri</p>
+       <a href=""> <img src="https://www.lifeberrys.com/img/article/west-bengal-5-1631877892-lb.jpg" alt=""></a>
+     </div>
+
+    </div>
+        
+
+
+     </div>
+          <!---the concate--------->
+          <footer>
+
+                      <div class="img-btn">
+                           <img src="" alt="">
+                      </div>
+
+
+                 <div class="cocat">
+                    <p>CONTACTUS</p>
+                    <p>Email:
+                        <i class="fa-solid fa-envelope"></i> <a href="">to1326993@gmail.com</a>
+                    </p>
+                    <p>phone:
+                        <i class="fa-solid fa-phone"></i>   <a href="">088-577-3821</a>
+                    </p>
+                 </div>
+             
+                    <div class="social-media">
+                        <p>social</p>
+                        <p>
+                            <i class="fa-brands fa-tiktok"></i>
+                            Tiktok</p>
+                        <p>
+                            <i class="fa-brands fa-facebook"></i>facebook</p>
+                        <p><i class="fa-brands fa-youtube"></i>  youtube</p>
+                    </div>
+            
+          </footer>
+
+</body>
+</html>
+<script>
+             
+   /*     let username;
+           let input=window.prompt("Enter name:");
+           let name='input';
+           if(input){
+            alert("you can see my website!");
+           }else{
+            alert("sorry  you can't see my website !please input your name!");
+                while(name !=input){
+                }
+           }*/
+        
+</script>
+
+<script>
+               
+            /*   let three=document.getElementById("three").value;
+                 three=document.write("<style>.three:hover{<li>Home</li>} </style>");
+                 let result=three;
+                 document.write("<li>home</li>")
+                 document.write("<li>home</li>")
+                 document.write("<li>home</li>")
+                 document.write("<li>home</li>")
+                 document.write("<li>home</li>")
+                 document.write("<li>home</li>")"*/
+                 
+                // let one=document.querySelectorAll("three");
+
+                 function button(){
+                   document.body.style.backgroundColor='red';
+                document.write("<li>home</li>");
+                 document.write("<li>home</li>");
+                 document.write("<li>home</li>");
+                 document.write("<li>home</li>");
+                 document.write("<li>home</li>");
+                 document.write("<li>home</li>");
+
+
+
+             
+                 }
+                 
+          
+</script>

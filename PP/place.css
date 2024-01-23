@@ -1,0 +1,30 @@
+
+
+body{
+    text-align: center;
+}
+.place1{
+    text-align: center;
+    font-size: larger;
+    color: rgba(128, 128, 128, 0.959);
+}
+.place p{
+    width: 100%;
+    text-align: center;
+       font-size: larger;
+  
+}
+.place{
+   border: 1px solid green;
+   margin: 50px;
+   background-color: rgba(128, 128, 128, 0.445);
+}
+.place img{
+      width: 30%;
+      height: 50%;
+}
+.place2 img{
+     width: 50px;
+     height: 250px;
+}
+
